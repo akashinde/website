@@ -1,19 +1,54 @@
 export default function Certifications () {
     const data = [
         {
-            title: 'Cert1',
-            desc: '2025',
+            title: 'DevOps Foundations: Containers',
+            desc: 'May 2025',
             href: '#',
         },
         {
-            title: 'Cert2',
-            desc: '2021',
+            title: 'What Is Generative AI?',
+            desc: 'Dec 2024',
+            href: '#',
+        },
+        {
+            title: 'Learning TypeScript',
+            desc: 'Oct 2024',
+            href: '#',
+        },
+        {
+            title: 'Git Workflows',
+            desc: 'Nov 2023',
+            href: '#',
+        },
+        {
+            title: 'Docker for Developers',
+            desc: 'Aug 2023',
+            href: '#',
+        },
+        {
+            title: 'JavaScript Essential Training',
+            desc: 'Apr 2023',
+            href: '#',
+        },
+        {
+            title: 'React.js Essential Training',
+            desc: 'Apr 2023',
+            href: '#',
+        },
+        {
+            title: 'Introduction to Blockchain Technologies',
+            desc: 'Nov 2021',
+            href: '#',
+        },
+        {
+            title: 'React: SPAs',
+            desc: 'Oct 2021',
             href: '#',
         },
     ]
 
     return (<>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid sm:grid-cols-2 gap-5">
             {
                 data.map((f, ind) => (
                     <a key={ind} 

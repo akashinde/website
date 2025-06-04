@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import Navbar from './navbar.js'
-import MouseFollower from "./follower";
+// import MouseFollower from "./follower";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +28,13 @@ export default function RootLayout({ children }) {
         <div className="my-5 flex justify-center">
           <Navbar />
         </div>
-        <main className="container mx-auto mb-10 p-5 w-full sm:w-1/2 border">
+        <main className="container mx-auto mb-10 p-5 w-full sm:w-1/2 sm:border">
           {children}
-          <MouseFollower />
+          {/* <MouseFollower /> */}
         </main>
-
+        <div className="fixed bottom-5 left-5">
+          <Image src="/song-bg-crop.gif" height={200} width={200} className="hidden sm:block" />
+        </div>
         <footer className="fixed bottom-0 left-0 w-screen flex items-center justify-center mb-2">
           <p className="text-xs">Made with NextJS by Akash Shinde @ 2025</p>
         </footer>
