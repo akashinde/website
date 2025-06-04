@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
+import Navbar from './navbar.js'
+import MouseFollower from "./follower";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +25,17 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="my-5 flex justify-center">
+          <Navbar />
+        </div>
+        <main className="container mx-auto mb-10 p-5 w-full sm:w-1/2 border">
+          {children}
+          <MouseFollower />
+        </main>
+
+        <footer className="fixed bottom-0 left-0 w-screen flex items-center justify-center mb-2">
+          <p className="text-xs">Made with NextJS by Akash Shinde @ 2025</p>
+        </footer>
       </body>
     </html>
   );

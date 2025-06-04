@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f8f4e6;
   --foreground: #171717;
 }
+
+/* @theme {  --animate-wiggle: wiggle 1s ease-in-out infinite;  @keyframes wiggle {    0%,    100% {      transform: rotate(-3deg);    }    50% {      transform: rotate(3deg);    }  }} */
 
 @theme inline {
   --color-background: var(--background);
@@ -12,15 +14,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  cursor: none !important;
 }
