@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           {/* <MouseFollower /> */}
         </main>
         <div className="fixed bottom-5 left-5">
-          <Image src="/song-bg-crop.gif" height={200} width={200} className="hidden sm:block" />
+          <Image src={`${process.env.NODE_ENV === 'production' ? '/website/song-bg-crop.gif' : '/song-bg-crop.gif'}`} height={200} width={200} alt="gif" className="hidden sm:block" />
         </div>
         <footer className="fixed bottom-0 left-0 w-screen flex items-center justify-center mb-2">
           <p className="text-xs">Made with NextJS by Akash Shinde @ 2025</p>

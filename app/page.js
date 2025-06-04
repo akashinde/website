@@ -31,7 +31,7 @@ export default function About() {
                 (<>
                     <div className="mb-5 flex justify-center">
                         <Image
-                        src="/image-removebg-preview.png"
+                        src={`${process.env.NODE_ENV === 'production' ? '/website/image-removebg-preview.png' : '/image-removebg-preview.png'}`}
                         alt="photo"
                         width={200}
                         height={200}

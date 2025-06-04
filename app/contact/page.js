@@ -16,7 +16,7 @@ export default function Contact () {
     return (<>
         <div className="flex flex-col justify-around gap-5">
             { data.map((d, ind) => (
-                <a key={ind} className={linkClass} href={d.url} target="_black">{d.name} <Image alt="link" src="/arrow-top-right-on-square.svg" height={15} width={15} /> </a>
+                <a key={ind} className={linkClass} href={d.url} target="_black">{d.name} <Image alt="link" src={`${process.env.NODE_ENV === 'production' ? '/website/arrow-top-right-on-square.svg' : '/arrow-top-right-on-square.svg'}`} height={15} width={15} /> </a>
             ))}
         </div>
     </>)
