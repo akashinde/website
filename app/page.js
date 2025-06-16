@@ -26,7 +26,7 @@ export default function About() {
             {
                 state.show
                 ? 
-                ( <iframe src="/Shinde_Resume.pdf" width="100%" height="600px"></iframe> )
+                ( <iframe src="https://drive.google.com/file/d/14ArGAQN_zVoqECEraVpfeQFPnaaOVvWD/preview" width="100%" height="600px" allow="autoplay"></iframe> )
                 :
                 (<>
                     <div className="mb-5 flex justify-center">
